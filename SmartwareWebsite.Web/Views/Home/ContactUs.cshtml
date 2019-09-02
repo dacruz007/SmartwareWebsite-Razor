@@ -1,0 +1,152 @@
+﻿
+@{
+    ViewData["Title"] = "ContactUs";
+    Layout = "~/Views/Shared/_OtherLayout.cshtml";
+}
+
+
+
+<div id="page-head" class="container-fluid inner-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="animated slideInDown page-title">Contact Us</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </div>
+
+<div id="contact-info" class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row-title" style="color:#2F3C52">Want to reach us?</div>
+                <div class="row-subtitle"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="info-box">
+                    <div class="animated slideInDown info-title">
+                        <h2 style="color:#2F3C52">Contact Us</h2>
+                        <p style="color:#2F3C52;font-size: 15px;">
+                            Let us help you decide which of our solutions is the best pick for your buisness.
+                            contact us now for more!
+                        </p>
+                    </div>
+                    <div class="row">
+
+                        <div class=" info-details location-icon">
+                            <div class="col-md-6">
+                                <div class="animated slideIndown" style="padding-bottom:25px;">
+                                    <i class="fas fa-map-marker"
+                                       style="font-size:30px; margin-bottom:10px; color:#2F3C52"></i><br>
+                                    <span style="font-weight:600;color:#2F3C52" ">ADDRESS</span>
+                                    <p style=" color:#2F3C52">
+                                        2J Obasa Close, Oba-Akran Avenue, Ikeja, Lagos State
+                                        Nigeria.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="info-details location-icon">
+                            <div class="col-md-6">
+                                <div div class="animated slideInDown">
+                                    <i class="fas fa-phone"
+                                       style="font-size:30px; margin-bottom:10px; color:#2F3C52"></i><br>
+                                    <span style="font-weight:600; color:#2F3C52">PHONE</span>
+                                    <p style="color:#2F3C52">+2347083639539</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="info-details location-icon">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="animated slideInDown" style="margin-top:30px;">
+                                    <i class="fas fa-envelope"
+                                       style="font-size:30px; margin-bottom:10px;color:#2F3C52"></i><br>
+                                    <span style="font-weight:600;color:#2F3C52">EMAIL</span>
+                                    <span style="color:#2F3C52">smartwareng@live.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="info-box">
+                    <div class="animated slideInDown">
+                        <h2 style="text-align:center; color:#2F3C52">Send us a message</h2>
+                        <p style="text-align:center;color:#2F3C52; font-size: 15px;">
+                            Please feel free to contact us if you have <br>
+                            any further questions or concerns.
+                        </p>
+                    </div>
+
+                    <div class="info-details">
+
+                        <div style="margin-top:50px">
+
+                            <form id="signinform" action="" >
+
+
+                                <div class="group" style="color:#2F3C52">
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label for="">Name</label>
+                                </div>
+
+                                <div class="group" style="color:#2F3C52">
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label for="">Email</label>
+                                </div>
+
+                                <div class="group" style="color:#2F3C52">
+                                    <label for="">Message</label><br><br>
+                                    <textarea name="" id="" cols="35" rows="5" required
+                                              style="border:1px sloid #2F3C52"></textarea>
+
+                                </div>
+                                <div class="form-button" style="margin-top:15px;">
+                                    <button id="submit" type="submit" class="ybtn ybtn-accent-color">
+                                        Send
+                                        Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.dropdown-submenu a.test').on("click", function (e) {
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
+        });
+    });
+
+</script>

@@ -1,0 +1,215 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>@ViewData["Title"] - Smartware</title>
+    <link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style-green.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/css/nav.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+
+    <style>
+        .dropdown-submenu {
+            position: relative;
+        }
+
+            .dropdown-submenu .dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: -1px;
+            }
+    </style>
+</head>
+
+<body>
+    <div id="header-holder" class="main-header">
+        <div class="bg-animation">
+            <div class="graphic-show">
+                <img class="fix-size" src="~/assets/images/graphic1.png" alt="">
+                <img class="img img1" src="~/assets/images/graphic1.png" alt="">
+                <img class="img img2" src="~/assets/images/graphic2.png" alt="">
+                <img class="img img3" src="~/assets/images/graphic3.png" alt="">
+            </div>
+        </div>
+        <nav id="nav" class="navbar navbar-default navbar-full">
+            <div class="container-fluid">
+                <div class="container container-nav">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="navbar-header">
+                                <button aria-expanded="false" type="button" class="navbar-toggle collapsed"
+                                        data-toggle="collapse" data-target="#bs">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="logo-holder" asp-action="Index" asp-controller="Home">
+                                    <div class="logo" style="width:500px;height:18px"></div>
+                                </a>
+                            </div>
+                            <div style="height: 1px;" role="main" aria-expanded="false" class="navbar-collapse collapse"
+                                 id="bs">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+                                    <li class="dropdown">
+                                        <a class="test" tabindex="-1" asp-action="Services" asp-controller="Home">Services  <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1"asp-action="Consultancy" asp-controller="Home">Consultancy</a></li>
+
+                                            <li class="dropdown-submenu">
+                                                <a class="test" href="#">Products <span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">IPos Bi</a></li>
+                                                    <li><a href="#">IPos Terminal</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a asp-action="Expertise" asp-controller="Home">Expertise <i class="fas fa-caret-down"></i></a>
+                                        <ul class="dropdown-menu dropdown-unity">
+                                            <li>
+                                                <a class=" " asp-action="WebAppDevelopment" asp-controller="Home"> Web App Development</a>
+                                            </li>
+
+                                            <li>
+                                                <a class="" asp-action="MobileAppDevelopment" asp-controller="Home">Mobile App Development </a>
+                                            </li>
+
+                                            <li>
+                                                <a class=" " asp-action="CloudComputing" asp-controller="Home">Cloud Computing </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a asp-action="AboutUs" asp-controller="Home">About Us </a>
+                                    </li>
+                                    <li class="dropdown unity-menu">
+                                        <a asp-action="Career" asp-controller="Home">Career <i class="fas fa-caret-down"></i></a>
+                                        <ul class="dropdown-menu dropdown-unity">
+                                            <li>
+                                                <a class=" " asp-action="BackendEngieer" asp-controller="Home">  Backend Engineer</a>
+                                            </li>
+
+                                            <li>
+                                                <a class="" asp-action="FrontendEngineer" asp-controller="Home"> Frontend Engineer </a>
+                                            </li>
+
+                                            <li>
+                                                <a class=" " asp-action="UIDesign" asp-controller="Home"> UI/UX </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </li>
+                                    <li class="support-button-holder support-dropdown">
+                                        <a asp-action="ContactUs" asp-controller="Home">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+       
+
+
+
+        @RenderBody();
+
+
+        <div id="footer" class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-3">
+                        <div class="address-holder">
+                            <img style="width:60%" src="~/assets/images/smartlogo.png" alt="">
+
+
+                            <!-- <div class="phone"><i class="fas fa-phone"></i>+2347083639539</div>
+                            <div class="email"><i class="fas fa-envelope"></i> smartwareng@live.com</div> -->
+                            <div class="address">
+
+                                <p>
+                                    Smartware solutions is a software development hub that champions diverse project from
+                                    even more diverse industries; committed to learning client needs, building innovative
+                                    solutions and impacting the seamlessness that the IT world demands.<br>
+                                    Nigeria.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 col-md-2">
+                        <div class="footer-menu-holder">
+                            <h4>Product</h4>
+                            <ul class="footer-menu">
+                                <li><a href="">Ipos Bi</a></li>
+                                <li><a href="">Smartfuel</a></li>
+                                <li><a href="">Companion Card</a></li>
+                                <li><a href="">Mobile Payment SDK</a></li>
+                                <li><a href="">ALAT</a></li>
+                                <li><a href="">Android SDK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 col-md-3">
+                        <div class="footer-menu-holder">
+                            <h4>Expertise</h4>
+                            <ul class="footer-menu">
+                                <li><a href="">Web App Development</a></li>
+                                <li><a href="">Mobile App Development</a></li>
+                                <li><a href="">Cloud Computing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="address-holder">
+                            <h4>Contact</h4>
+                            <div class="phone"><i class="fas fa-phone"></i>+2347083639539</div>
+                            <div class="email"><i class="fas fa-envelope"></i> smartwareng@live.com</div>
+                            <div class="email">
+                                <span>
+                                    <i class="fas fa-map-marker"></i>
+                                    No 2J,Obasa Close,<br>
+                                    Oba-Akran Avenue, Ikeja, Lagos State,
+                                    Nigeria.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-1 col-md-1">
+                        <div class="social-menu-holder">
+                            <ul class="social-menu">
+                                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
+<script src="~/assets/css/js/nav.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.dropdown-submenu a.test').on("click", function (e) {
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
+        });
+    });
+
+</script>
